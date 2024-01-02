@@ -133,11 +133,17 @@ def filling_form(form_fields_info):
 
 ##---------------- Running server ---------------###
 
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template
 from flask_cors import CORS  # You need to install flask-cors
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
+
+
+@app.route('/')
+def home():
+    return render_template('styled_tax_form.html')
+
 
 @app.route('/api/get_tax_form_data', methods=['GET'])
 def get_tax_form_data():
