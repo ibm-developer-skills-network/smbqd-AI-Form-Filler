@@ -1,6 +1,8 @@
 langchain==0.0.346
+sqlalchemy==2.0.24
 transformers==4.31.0
 InstructorEmbedding==1.0.1
+sentence-transformers==2.2.2
 ibm-watson-machine-learning==1.0.321
 pypdf==3.15.0
 Flask==2.3.2
