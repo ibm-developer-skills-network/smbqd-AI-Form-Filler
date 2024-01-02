@@ -16,7 +16,7 @@ function autoFillTaxForm() {
     // Show the loading spinner
     document.getElementById('loadingSpinner').style.display = 'flex';
 
-    fetch('http://127.0.0.1:5055/api/get_tax_form_data')
+    fetch(window.location.origin+'/api/get_tax_form_data')
         .then(response => response.json())
         .then(data => {
             // Clear existing values
