@@ -24,8 +24,7 @@ from flask_cors import CORS
 def get_llm():
     # Credentials for accessing IBM Watson services.
     my_credentials = {
-        "url": "https://us-south.ml.cloud.ibm.com",
-        "token": "skills-network"
+        "url": "https://us-south.ml.cloud.ibm.com"
     }
 
     # Parameters for controlling the generation of text by the model.
